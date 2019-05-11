@@ -5,8 +5,15 @@ namespace Function
 {
     public class FunctionHandler
     {
+        private IInjectMe _injectMe;
+
+        public FunctionHandler(IInjectMe injectMe)
+        {
+            _injectMe = injectMe;
+        }
+
         public string Handle(string input) {
-            return $"Hi there - your input was: {input}\n";
+            return _injectMe.SayHello(input);
         }
     }
 }
