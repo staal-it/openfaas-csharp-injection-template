@@ -1,0 +1,1 @@
+# openfaas-csharp-injection-template
