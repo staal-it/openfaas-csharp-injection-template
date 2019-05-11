@@ -1,0 +1,2 @@
+language: csharpinjection
+fprocess: dotnet ./root.dll
